@@ -30,12 +30,12 @@ const Poll = (props) => {
   };
 
   return (
-    <div className="poll-page">
+    <div className="poll-container">
       <h3>Poll by {props.author.id}</h3>
       <h2>Would You Rather</h2>
-      <div className="card-container">
+      <div className="poll__card-container">
         <div
-          className="card"
+          className="poll__card"
           style={{
             background:
               props.isAnswer && props.answer === "optionOne" ? " #198754" : "",
@@ -48,7 +48,7 @@ const Poll = (props) => {
             </button>
           )}
           {props.isAnswer && (
-            <p className="vote">
+            <p className="poll__vote">
               Number of people vote: {props.numberOfOptionOne} (
               {props.percentOfOptionOne}%)
             </p>
@@ -56,7 +56,7 @@ const Poll = (props) => {
         </div>
 
         <div
-          className="card"
+          className="poll__card"
           style={{
             background:
               props.isAnswer && props.answer === "optionTwo" ? "#198754" : "",
@@ -69,7 +69,7 @@ const Poll = (props) => {
             </button>
           )}
           {props.isAnswer && (
-            <p className="vote">
+            <p className="poll__vote">
               Number of people vote: {props.numberOfOptionTwo} (
               {props.percentOfOptionTwo}%)
             </p>

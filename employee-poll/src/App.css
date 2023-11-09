@@ -206,3 +206,40 @@ select {
 .add-question h3 {
   color: gray;
 }
+
+.poll-container {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+}
+
+.poll-container img {
+  width: 200px;
+}
+
+.poll__card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.poll__card {
+  border: 1px solid #d3d3d3;
+  width: 500px;
+  border-radius: 5px;
+}
+
+.poll-container button {
+  border: 1px solid #85a389;
+  width: inherit;
+  background-color: #85a389;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.poll__vote {
+  color: #b31312;
+  font-weight: bold;
+  font-size: 0.8rem;
+}

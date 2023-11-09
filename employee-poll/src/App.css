@@ -1,0 +1,208 @@
+body {
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.app {
+  margin: 0;
+  padding: 20px;
+}
+
+.login {
+  box-shadow: 0 3px 10px rgba(51, 29, 29, 0.2);
+  margin: 10% 40%;
+  padding: 2vw;
+  text-align: center;
+  height: 30vh;
+  position: relative;
+  background-color: linear-gradient(90deg, #efefef, #b9deed);
+  ;
+}
+
+select {
+  font-size: 1.15rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+  margin: auto;
+}
+
+.login__btn {
+  font-size: 15px;
+  margin: auto;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #2f80ed;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin-top: 40%;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  margin: 10px;
+}
+
+.header__nav button {
+  border: none;
+  background-color: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.dashboard__toggle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard__toggle button {
+  background-color: white;
+  color: #81b488;
+  border: 1px solid #81b488;
+  padding: 10px 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dashboard__toggle button:disabled {
+  background-color: #81b488;
+  color: white;
+  cursor: default;
+}
+
+.dashboard__container {
+  width: 60vw;
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.dashboard__questions {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.question__card {
+  border: 1px solid #d3d3d3;
+  box-shadow: 0 5px 10px 0 rgba((0, 0, 0, 0.2), green, blue, alpha);
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.question__name {
+  font-weight: bold;
+}
+
+.question__date {
+  font-weight: 400;
+  color: gray;
+}
+
+.question__card a {
+  width: 200px;
+  background-color: white;
+  color: #a0c49d;
+  border: 1px solid #a0c49d;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.leader-board {
+  margin: auto;
+  width: 60%;
+  border-collapse: collapse;
+}
+
+.leader-board img {
+  width: 50px;
+}
+
+.leader-board td,
+.leader-board th {
+  border: 1px solid #dddddd;
+  padding: 5px;
+}
+
+.leader-board__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-question {
+  text-align: center;
+}
+
+.add-question label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.add-question input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.add-question button {
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #a0c49d;
+  border: 1px solid #a0c49d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-question button:disabled {
+  background-color: #d3d3d3;
+}
+
+.add-question h3 {
+  color: gray;
+}

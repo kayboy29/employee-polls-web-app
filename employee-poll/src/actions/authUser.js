@@ -11,6 +11,7 @@ export function setAuthedUser(user) {
 }
 
 export function logout() {
+  localStorage.removeItem("previousUrl");
   return {
     type: LOGOUT,
   };

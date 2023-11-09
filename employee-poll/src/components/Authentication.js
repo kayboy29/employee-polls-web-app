@@ -1,8 +1,13 @@
 import { connect } from "react-redux";
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 const Authentication = (props) => {
+  const location = useLocation();
+  if (Object.keys(props.authUser).length === 0) {
+    localStorage.setItem("previousUrl", location.pathname);
+  }
+
   return Object.keys(props.authUser).length === 0 ? (
     <Navigate to="/login" replace />
   ) : (

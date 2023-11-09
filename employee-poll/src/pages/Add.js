@@ -60,7 +60,7 @@ const Add = (props) => {
         />
         <button
           disabled={optionOne === "" || optionTwo === ""}
-          data-testid="submit-new-btn"
+          data-testid="submit-add-btn"
         >
           Add
         </button>

@@ -9,9 +9,16 @@ const Login = (props) => {
   const [userId, setUserId] = useState("");
 
   const handleLogin = (e) => {
+    e.preventDefault();
     props.dispatch(setAuthedUser(props.users[userId]));
 
-    navigate("/");
+    const url = localStorage.getItem("previousUrl");
+
+    if (url) {
+      navigate(url);
+    } else {
+      navigate("/");
+    }
   };
 
   return (

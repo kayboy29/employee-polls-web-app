@@ -1,5 +1,75 @@
 # Employee Polls Project
 
+This project help employees can use internally. In order to improve collaboration and transparency within the company, every employee can access the application and create a poll with two proposed solutions. Employees can then vote on these solutions and see which solutions have the most votes. In addition, HR has requested you have a dashboard that lists every employee ordered by the number of polls they've created and answered. To give employees incentive to use your application, HR will give a prize each quarter for the top employees who have created and answered the most polls.
+
+In the "Employee Polls" Project, you'll build a web app that lets an employee create polls for coworkers. The process goes like this: An employee is asked a question in the form: “Would you rather [option A] or [option B] ?”. Answering "neither" or "both" is not possible.
+
+In your app, users will be able to answer polls, see which polls they haven’t answered, see how other people have voted, post polls, and see the ranking of users on the leaderboard.
+
+## Develop by:
+
+- KayCozyBoy
+- Github link: https://github.com/kayboy29
+
+## To get started developing:
+
+- cd `/employee-polls`
+- install all project dependencies with `npm install`
+- start the development server with `npm start`
+
+## What You're Getting
+
+```bash
+├── README.md - This file.
+├── package.json # npm package manager file.
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── avatar-1.jpeg
+│   ├── avatar-2.ico
+│   ├── avatar-3.ico
+│   ├── avatar-4.ico
+│   ├── login-img.webp
+│   └── robot.txt
+└── src
+    ├── App.css # Styles for the app
+    ├── App.js # This is the root of the app
+    ├── store.js
+    ├── actions
+    │   ├── authUser.js
+    │   ├── question.js
+    │   └── users.js
+    ├── components
+    │   ├── Authenticate.js
+    │   ├── Header.js
+    │   ├── Question.js
+    │   └── Questions.js
+    ├── data
+    │   └── _DATA.js
+    ├── pages
+    │   ├── Add.js
+    │   ├── Dashboard.js
+    │   ├── LeaderBoard.js
+    │   ├── Login.js
+    │   ├── NotFound.js
+    │   └── Poll.js
+    ├── reducers
+    │   ├── authUser.js
+    │   ├── index.js
+    │   ├── question.js
+    │   └── users.js
+    ├── store
+    │   └── store.js
+    ├── test
+    │   ├── Add.test.js
+    │   ├── App.test.js
+    │   ├── Data.test.js
+    │   ├── Header.test.js
+    │   └── Question.test.js
+    ├── index.css # Global styles
+    └── index.js
+```
+
 This is the starter code for the final assessment project for Udacity's React & Redux course.
 
 The `_DATA.js` file represents a fake database and methods that let you access the data. The only thing you need to edit in the ` _DATA.js` file is the value of `avatarURL`. Each user should have an avatar, so you’ll need to add the path to each user’s avatar.
@@ -96,7 +166,7 @@ _Parameters_: Object that contains the following properties: `authedUser`, `qid`
 | qid        | String | The id of the question that was answered                                                |
 | answer     | String | The option the user selected. The value should be either `"optionOne"` or `"optionTwo"` |
 
-# Getting Started with Create React App and Redux
+# Getting Started with this project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using
 the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
